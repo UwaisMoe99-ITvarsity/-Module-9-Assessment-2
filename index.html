@@ -16,13 +16,18 @@
 
         var cities = [
             {name: "Istumbul", utcOffset:3, flag: "Turkey.png" },
-            {name: "New York City",  utcOffset: -4, flag: "United-States-Of-America.png"},
+            {name: "New York City",  utcOffset: -5, flag: "United-States-Of-America.png"},
             {name: "Tokyo", utcOffset: 9, flag: "Japan.png"},
             {name: "Moscow", utcOffset: 3, flag: "Russia.png"},
             {name: "Rio De Janeiro", utcOffset: -3, flag: "Brazil.png"},
             {name: "Sydney", utcOffset: 11, flag: "Australia.png"},
             {name: "Vancouver", utcOffset: -8, flag: "Canada.png"},
-            {name: "Beijing", utcOffset: 8, flag: "China.png"}
+            {name: "Beijing", utcOffset: 8, flag: "China.png"},
+            {name: "Norway", utcOffset: 1, flag: "Norway.png"},
+            {name: "Indonesia", utcOffset: 7, flag: "Indonesia.png"},
+            {name: "Switzerland", utcOffset: 1, flag: "Switzerland.png"},
+            {name: "London", utcOffset: 0, flag: "United-Kingdom.png"},
+            {name: "Azerbaijan", utcOffset: 4, flag: "Azerbaijan.png"}
         ];
 
         cities.sort(compare);
@@ -67,7 +72,7 @@
                     </tr>
             `;
 
-            for(a=0; a <cities.length; a++){
+            for(a=0; a < cities.length; a++){
                 output += `
                     <tr>
                         <td><img src="img/${cities[a].flag}"/></td>
